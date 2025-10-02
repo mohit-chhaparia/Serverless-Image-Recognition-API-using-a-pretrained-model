@@ -1,0 +1,6 @@
+fastapi # API Framework
+uvicorn # Server
+torch # Pretrained Image Model
+torchvision # Pretrained Image Model
+pillow # Open Images
+python-multipart # Handle File Uploads
