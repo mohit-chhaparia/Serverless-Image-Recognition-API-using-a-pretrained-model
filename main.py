@@ -17,3 +17,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+weights = ResNet18_Weights.DEFAULT
+model = resnet18(weights=weights)
+model.eval()
+preprocess = weights.transforms()
+categories = weights.meta["categories"]
+
+MAX_UPLOAD_MB = 8
